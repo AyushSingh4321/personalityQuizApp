@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import './quiz.dart';
 import './result.dart';
 
-// void main() {
-//   runApp(AyushApp());
-// }
 void main() => runApp(AyushApp());
 
 class AyushApp extends StatefulWidget {
@@ -41,7 +38,7 @@ class _AyushAppState extends State<AyushApp> {
       'answers': [
         {'text': 'Home', 'score': 10},
         {'text': 'Work', 'score': 5},
-        {'text': 'With Friends', 'score': 9},
+        {'text': 'Temple', 'score': 9},
         {'text': 'Party', 'score': 1},
       ],
     }
@@ -71,21 +68,7 @@ class _AyushAppState extends State<AyushApp> {
 
   @override // OPTIONAL
   Widget build(BuildContext context) {
-    // const questions = [
-    //   //It is a list
-    //   {
-    //     'questionText': 'What\'s your favourite color?',
-    //     'answers': ['Red', 'Yellow', 'Blue', 'Green',],
-    //   },
-    //   {
-    //     'questionText': 'What\'s your favourite animal?',
-    //     'answers': ['Tiger', 'Lion', 'Cat', 'Dog'],
-    //   },
-    //   {
-    //     'questionText': 'What\'s your favourite place?',
-    //     'answers': ['School', 'College', 'Office', 'Home'],
-    //   }
-    // ];
+    
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
