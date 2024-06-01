@@ -12,8 +12,10 @@ class Result extends StatelessWidget {
       resultText = 'You are..... strange?.';
     } else if (resultScore <= 18) {
       resultText = 'You are normal';
-    } else {
+    } else if (resultScore <= 100) {
       resultText = 'You are awesome';
+    } else {
+      resultText = 'You are God Like!';
     }
     return resultText;
   }
@@ -29,11 +31,14 @@ class Result extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           TextButton(
-            child: Text('Restart Quiz!',style: TextStyle(fontSize: 15),),
+            child: Text(
+              'Restart Quiz!',
+              style: TextStyle(fontSize: 15),
+            ),
             onPressed: resetHandler,
-             style: TextButton.styleFrom(
-    primary: Colors.blue,
-  ),
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.blue,
+            ),
           )
         ],
       ),
